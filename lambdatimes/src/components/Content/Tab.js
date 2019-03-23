@@ -1,4 +1,8 @@
-import React from 'react';
+// - IMPORTS - //
+  import React from 'react';
+  import PropTypes from 'prop-types';
+// --**-- END --**-- 
+// - CODE START - //
 
 const Tab = props => {
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
@@ -12,11 +16,17 @@ const Tab = props => {
          you'll need to pass the `tab` in as an argument to this handler. */
       }}
     >
+
       {props.tab.toUpperCase()}
     </div>
   );
 };
 
 // Make sure you include PropTypes on your props.
+Tab.propTypes = {
+  tabs: PropTypes.string
+}
 
 export default Tab;
+
+
