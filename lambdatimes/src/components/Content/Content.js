@@ -30,10 +30,7 @@ export default class Content extends Component {
     // this function should take in the tab and update the state with the new tab.
     this.setState( prevState => {
       return {selected: tab}
-  })
-
-
-  console.log('click from inside tab')
+    })
   };
 
   filterCards = () => {
@@ -50,7 +47,17 @@ export default class Content extends Component {
         - else, it should only return those cards whose 'tab' matched this.state.selected.
     */
   
-    return this.state.cards;
+    console.log(this.state.selected)
+
+
+    if (this.state.selected !== 'all') {
+        return (
+          this.state.cards.filter( card => card.tab === this.state.selected)
+        )
+    } else {
+        return this.state.cards
+    }
+
   };
 
   render() {

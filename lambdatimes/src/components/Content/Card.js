@@ -1,4 +1,8 @@
-import React from 'react';
+// - IMPORTS - //
+  import React from 'react';
+  import PropTypes from 'prop-types';
+// --**-- END --**-- 
+// - CODE START - //
 
 const Card = props => {
   return (
@@ -17,5 +21,7 @@ const Card = props => {
 };
 
 // Make sure to include PropTypes.
-
+Card.propTypes = {
+  tabs: PropTypes.string
+}
 export default Card;

@@ -1,5 +1,8 @@
 // - IMPORTS - //
   import React, { Component } from 'react';
+  import PropTypes from 'prop-types';
+  
+  // - Components - //
   import Card from './Card';
 // --**-- END --**-- 
 // - CODE START - //
@@ -20,5 +23,7 @@ const Cards = props => {
 }
 
 // Make sure you include prop types for all of your incoming props
-
+Cards.propTypes = {
+  tabs: PropTypes.string
+}
 export default Cards;
