@@ -11,7 +11,7 @@ const Cards = props => {
       {props.cards.map( card => {
         return (
           <Card 
-            cardInfo={card}
+            card={card}
           />
         )
       })}
