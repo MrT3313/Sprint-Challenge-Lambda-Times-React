@@ -22,6 +22,6 @@ const Card = props => {
 
 // Make sure to include PropTypes.
 Card.propTypes = {
-  tabs: PropTypes.string
+  card: PropTypes.object
 }
 export default Card;
