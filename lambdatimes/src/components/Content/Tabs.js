@@ -7,6 +7,7 @@
 // --**-- END --**-- 
 // - CODE START - //
 
+
 const Tabs = props => {
   return (
     <div className="tabs">
