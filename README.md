@@ -30,7 +30,7 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
 
-    PropTypes are used to check the type of data that is being passed down to a child component. It is important to check what type of data you are passing because it can be a first level of debugging that will help you find WHY a component is not rendering like you envisioned. 
+    PropTypes are used to check the type of data that is being passed down to a child component. It is important to check what type of data you are passing because it can be a first level of debugging that will help you find WHY a component is not rendering like you intended. 
 
 - [ ] Describe a life-cycle event in React?
 
@@ -46,7 +46,7 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
     
     Death / Un-Mount Phase
         -Component is removed from screen
-        -component will Unmount invoked
+        -component will Un-Mount invoked
 
 
 - [ ] Explain the details of a Higher Order Component?
